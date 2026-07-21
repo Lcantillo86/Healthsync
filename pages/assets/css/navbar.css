@@ -1,0 +1,436 @@
+/*====================================================
+NAVBAR
+Portafolio SYNTESCH
+====================================================*/
+
+.header{
+
+    position: relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+
+/*====================================================
+VIDEO
+====================================================*/
+
+.header-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:0;
+
+}
+
+
+/*====================================================
+OVERLAY
+====================================================*/
+
+.header-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        rgba(17,24,39,.40) 0%,
+        rgba(17,24,39,.55) 40%,
+        rgba(17,24,39,.82) 100%
+    ),
+
+    radial-gradient(
+
+        circle at center,
+
+        rgba(51,131,242,.18),
+
+        transparent 60%
+
+    );
+
+    z-index:1;
+
+}
+
+
+/*====================================================
+NAVBAR
+====================================================*/
+
+.navbar-syntesch{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:82px;
+
+    z-index:999;
+
+    transition:.35s ease;
+
+    backdrop-filter:blur(18px);
+
+    background:
+
+    rgba(17,24,39,.18);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+    display:flex;
+    align-items:center;
+
+}
+
+
+
+
+/*====================================================
+LOGO
+====================================================*/
+
+.logo{
+
+    text-decoration:none;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:.06em;
+
+    transition:.35s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.03);
+
+}
+
+.logo-pink{
+
+    color:#EC4899;
+
+}
+
+.logo-dark{
+
+    color:#FCFEFF;
+
+}
+
+
+/*====================================================
+MENU
+====================================================*/
+
+.navbar-nav{
+    gap:2rem;
+}
+
+.navbar .container{
+    height:100%;
+}
+
+.navbar-brand{
+    padding:0;
+}
+/*====================================================
+LINKS
+====================================================*/
+
+.navbar-nav .nav-link{
+
+    position:relative;
+    padding:.5rem 0;
+display:inline-flex;
+    text-decoration:none;
+
+    color:#FCFEFF;
+
+    font-family:"Inter",sans-serif;
+
+    font-weight:500;
+
+    font-size:.95rem;
+
+    letter-spacing:.05em;
+
+    transition:.35s;
+
+}
+
+
+.navbar-nav .nav-link:hover{
+    color:#4AE6D4;
+}
+
+
+/*====================================================
+UNDERLINE
+====================================================*/
+
+.navbar-nav .nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:2px;
+
+    background:#EC4899;
+
+    transition:.35s;
+
+    transform:translateX(-50%);
+
+}
+
+
+.navbar-nav .nav-link:hover::after{
+
+    width:100%;
+
+}
+
+
+/*====================================================
+ACTIVE
+====================================================*/
+
+.navbar-nav .nav-link.active{
+    color:#EC4899 !important;
+}
+
+
+.navbar-nav .nav-link.active::after{
+
+    width:100%;
+
+}
+
+
+/*====================================================
+TOGGLER
+====================================================*/
+
+
+.navbar-toggler:hover{
+color:#EC4899;
+}
+
+/*====================================================
+NAV SCROLL
+====================================================*/
+
+.navbar-syntesch.scrolled{
+
+    background:
+
+    rgba(17,24,39,.92);
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.30);
+
+}
+
+
+/*====================================================
+RESPONSIVE
+====================================================*/
+
+@media(max-width:991px){
+
+.navbar-toggler{
+
+display:block;
+
+}
+
+.navbar-syntesch .navbar-collapse{
+    position:absolute;
+}
+
+.navbar-nav{
+
+flex-direction:column;
+
+gap:2rem;
+
+align-items:flex-start;
+
+}
+
+}
+
+
+/*====================================================
+ANIMACION ENTRADA
+====================================================*/
+
+.navbar-syntesch{
+animation:navbarFade .8s ease;
+}
+
+
+@keyframes navbarFade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(-25px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================================================
+LATIDO DIVISOR
+SYNTESCH Portfolio
+==================================================*/
+
+.heartbeat-divider{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 90px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: transparent;
+
+    margin: 0;
+
+    z-index: 5;
+
+}
+
+.heartbeat-divider svg{
+
+    width: 100%;
+
+    height: 90px;
+
+}
+
+.heartbeat-divider path{
+
+    fill: none;
+
+    stroke: var(--primary-pink);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 10px rgba(236,72,153,.35));
+
+    animation: heartbeatMove 3s ease-in-out infinite;
+
+}
+
+/*==================================================
+ANIMACIÓN LATIDO
+==================================================*/
+
+@keyframes heartbeatMove{
+
+    0%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+    50%{
+
+        stroke-width:6;
+
+        opacity:1;
+
+        filter:drop-shadow(0 0 18px rgba(236,72,153,.55));
+
+    }
+
+    100%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:768px){
+
+    .heartbeat-divider{
+
+        height:70px;
+
+    }
+
+    .heartbeat-divider svg{
+
+        height:70px;
+
+    }
+
+}

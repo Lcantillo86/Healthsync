@@ -1,0 +1,205 @@
+/*==================================================
+TECNOLOGIAS
+SYNTESCH
+==================================================*/
+
+.tecnologias{
+
+    padding:5rem 0;
+
+    background:var(--scientific-lilac);
+
+}
+
+.tecnologias .container{
+
+    max-width:1320px;
+
+}
+
+/*======================================
+HEADER
+======================================*/
+
+.tecnologias-header{
+
+    margin-bottom:4rem;
+
+}
+
+.tecnologias-header h2{
+
+    font-family:var(--font-heading);
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:.8rem;
+
+}
+
+.tecnologias-header p{
+
+    color:var(--professional-gray);
+
+    font-size:1rem;
+
+}
+
+/*======================================
+GRID
+======================================*/
+
+.tecnologias-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+  margin-top:2rem;
+
+
+.tech-card{
+
+    background:#FFFFFF;
+
+    border:1px solid var(--primary-pink);
+
+    height:95px;
+
+ display:flex;
+
+ flex-direction:column;
+
+ justify-content:center;
+ padding:12px;
+
+ border-radius:10px;
+
+ align-items:center;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#FCFEFF;
+
+    box-shadow:
+
+        0 15px 30px rgba(236,72,153,.12);
+
+}
+
+.tech-card h3{
+
+    font-family:var(--font-body);
+
+    font-size:.70rem;
+
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    text-align:center;
+line-height:1.2;
+    margin:0;
+
+}
+}
+
+
+
+/*======================================
+CARD
+======================================*/
+
+
+/*======================================
+ICONO
+======================================*/
+
+.tech-icon{
+
+    width:36px;
+
+    height:36;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+}
+
+.tech-icon img{
+
+    width:32px;
+
+    height:32px;
+
+    object-fit:contain;
+
+}
+
+/*======================================
+NOMBRE
+======================================*/
+
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+.tecnologias-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+.tecnologias-grid{
+
+grid-template-columns:1fr;
+}
+
+.tecnologias-header{
+
+    text-align:center;
+
+}
+
+.tecnologias-header h2{
+
+    font-size:2rem;
+
+}
+
+.tecnologias-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:480px){
+
+.tecnologias-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

@@ -1,0 +1,540 @@
+/*==================================================
+HERO
+SYNTESCH Portfolio
+==================================================*/
+
+.hero{
+    position: relative;
+    margin-top: -120px;
+    z-index: 20;
+    padding-bottom: 8rem;
+}
+
+.hero .container{
+    max-width: 1320px;
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:
+        320px
+        60px
+        1fr;
+    align-items:center;
+    gap:2rem;
+}
+
+/*==================================================
+PROFILE CARD
+==================================================*/
+
+.hero-profile{
+
+    background:rgba(252,254,255,.70);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    border-radius:28px;
+
+    padding:2.5rem 2rem;
+
+    text-align:center;
+
+    box-shadow:
+        0 25px 60px rgba(17,24,39,.12);
+
+    transition:.35s ease;
+}
+
+.hero-profile:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 35px 80px rgba(17,24,39,.16);
+}
+
+/*==================================================
+PHOTO
+==================================================*/
+
+.profile-image img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid var(--primary-pink);
+
+    margin:auto;
+
+    margin-bottom:1.5rem;
+
+    transition:.5s;
+}
+
+.profile-image:hover{
+
+    transform:scale(1.04);
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+.hero-profile h1{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:.4rem;
+}
+
+
+.hero-profile h2{
+
+    font-family:var(--font-body);
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:var(--professional-gray);
+
+    margin-bottom:2rem;
+}
+
+
+
+/*==================================================
+PROFILE CONTENT
+==================================================*/
+
+.profile-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    margin-top:1.5rem;
+
+}
+
+.profile-content h1{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:var(--professional-black);
+
+    margin:0;
+
+}
+
+.profile-content h2{
+
+    font-family:var(--font-body);
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    color:var(--health-blue);
+
+    margin:0;
+
+}
+
+.profile-content p{
+
+    font-family:var(--font-body);
+
+    font-size:.95rem;
+
+    color:var(--professional-gray);
+
+    margin:0;
+
+    text-align:center;
+
+}
+
+
+/*==================================================
+BUTTONS
+==================================================*/
+
+.profile-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+}
+
+.profile-buttons a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:.7rem;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:var(--professional-black);
+
+    background:white;
+
+    transition:.35s;
+}
+
+.profile-buttons a:hover{
+
+    background:var(--primary-pink);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/*==================================================
+HERO-INFO
+==================================================*/
+
+.hero-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+    }
+
+    100%{
+
+        transform:translateY(0);
+    }
+}
+
+/*==================================================
+HEADINGS
+==================================================*/
+
+.hero-info h2{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    font-weight:200;
+
+    color:var(--professional-black);
+
+    margin-bottom:.5rem;
+}
+
+.hero-info h3{
+
+    font-family:var(--font-body);
+
+    font-size:1.3rem;
+
+    font-weight:500;
+
+    color:var(--health-blue);
+
+    margin-bottom:.5rem;
+}
+
+/*==================================================
+ACTION BUTTONS
+==================================================*/
+
+.hero-Buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:1.5rem;
+
+    margin-top:2rem;
+}
+
+.hero-Buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    padding:16px 28px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+/* GitHub */
+
+.hero-Buttons a:first-child{
+
+    background:var(--professional-black);
+
+    color:white;
+}
+
+.hero-Buttons a:first-child:hover{
+
+    background:var(--health-blue);
+
+    transform:translateY(-4px);
+}
+
+/* CV */
+
+.hero-Buttons a:last-child{
+
+    background:var(--primary-pink);
+
+    color:white;
+}
+
+.hero-Buttons a:last-child:hover{
+
+    background:var(--innovation-blue);
+
+    transform:translateY(-4px);
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.hero-grid{
+
+    grid-template-columns:280px 40px 1fr;
+}
+
+
+.hero-info h2{
+
+    font-size:2.5rem;
+}
+
+}
+
+@media(max-width:992px){
+
+.hero{
+
+    margin-top:-80px;
+}
+
+.hero-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+}
+
+
+
+.hero-Buttons{
+
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.profile-image{
+
+    width:180px;
+
+    height:180px;
+}
+
+.hero-info h2{
+
+    font-size:2rem;
+}
+
+.hero-info h3{
+
+    font-size:1.1rem;
+}
+
+.hero-Buttons{
+
+    flex-direction:column;
+}
+
+.hero-Buttons a{
+
+    justify-content:center;
+}
+
+}
+
+/*==================================================
+LATIDO DIVISOR
+SYNTESCH Portfolio
+==================================================*/
+
+.heartbeat-divider{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 90px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: transparent;
+
+    margin: 0;
+
+    z-index: 5;
+
+}
+
+.heartbeat-divider svg{
+
+    width: 100%;
+
+    height: 90px;
+
+}
+
+.heartbeat-divider path{
+
+    fill: none;
+
+    stroke: var(--primary-pink);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 10px rgba(236,72,153,.35));
+
+    animation: heartbeatMove 3s ease-in-out infinite;
+
+}
+
+/*==================================================
+ANIMACIÓN LATIDO
+==================================================*/
+
+@keyframes heartbeatMove{
+
+    0%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+    50%{
+
+        stroke-width:6;
+
+        opacity:1;
+
+        filter:drop-shadow(0 0 18px rgba(236,72,153,.55));
+
+    }
+
+    100%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:768px){
+
+    .heartbeat-divider{
+
+        height:70px;
+
+    }
+
+    .heartbeat-divider svg{
+
+        height:70px;
+
+    }
+
+}

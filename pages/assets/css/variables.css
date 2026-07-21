@@ -1,0 +1,197 @@
+/*====================================================
+VARIABLES GLOBALES
+PORTAFOLIO SYNTESCH
+====================================================*/
+
+:root{
+
+/*=========================================
+COLORES PRINCIPALES
+=========================================*/
+
+--primary-pink:#EC4899;
+
+--health-blue:#3383F2;
+
+--innovation-blue:#5EC2FD;
+
+--biomedical:#4AE6D4;
+
+--scientific:#ECE1F9;
+
+
+/*=========================================
+COLORES BASE
+=========================================*/
+
+--white:#FCFEFF;
+
+--professional-black:#111827;
+
+--professional-gray:#393E4F;
+
+
+/*=========================================
+TIPOGRAFÍAS
+=========================================*/
+
+--font-heading:"Poppins",sans-serif;
+
+--font-body:"Inter",sans-serif;
+
+
+/*=========================================
+BORDES
+=========================================*/
+
+--radius-sm:10px;
+
+--radius-md:18px;
+
+--radius-lg:28px;
+
+--radius-circle:50%;
+
+
+/*=========================================
+SOMBRAS
+=========================================*/
+
+--shadow-sm:0 10px 25px rgba(17,24,39,.08);
+
+--shadow-md:0 20px 45px rgba(17,24,39,.12);
+
+--shadow-lg:0 30px 70px rgba(17,24,39,.18);
+
+
+/*=========================================
+TRANSICIONES
+=========================================*/
+
+--transition:.35s ease;
+
+
+/*=========================================
+ANCHO CONTENEDOR
+=========================================*/
+
+--container-width:1320px;
+
+}
+
+/*==================================================
+LATIDO DIVISOR
+SYNTESCH Portfolio
+==================================================*/
+
+.heartbeat-divider{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 90px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: transparent;
+
+    margin: 0;
+
+    z-index: 5;
+
+}
+
+.heartbeat-divider svg{
+
+    width: 100%;
+
+    height: 90px;
+
+}
+
+.heartbeat-divider path{
+
+    fill: none;
+
+    stroke: var(--primary-pink);
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 10px rgba(236,72,153,.35));
+
+    animation: heartbeatMove 3s ease-in-out infinite;
+
+}
+
+/*==================================================
+ANIMACIÓN LATIDO
+==================================================*/
+
+@keyframes heartbeatMove{
+
+    0%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+    50%{
+
+        stroke-width:6;
+
+        opacity:1;
+
+        filter:drop-shadow(0 0 18px rgba(236,72,153,.55));
+
+    }
+
+    100%{
+
+        stroke-width:4;
+
+        opacity:.85;
+
+    }
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:768px){
+
+    .heartbeat-divider{
+
+        height:70px;
+
+    }
+
+    .heartbeat-divider svg{
+
+        height:70px;
+
+    }
+
+/*===============body=================*/
+
+}
+
+body{
+
+    background:#d5dbf4;
+
+}

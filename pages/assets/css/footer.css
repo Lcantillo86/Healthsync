@@ -1,0 +1,304 @@
+/*==================================================
+FOOTER
+==================================================*/
+
+.footer{
+
+    position:relative;
+
+    padding:70px 0;
+
+    background:linear-gradient(
+        180deg,
+        rgba(252,254,255,.15),
+        rgba(255,255,255,.75)
+    );
+
+    backdrop-filter:blur(20px);
+
+    border-top:1px solid rgba(255,255,255,.25);
+
+}
+
+/*---------------------------------------
+CONTENEDOR
+---------------------------------------*/
+
+.footerContenido{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+/*---------------------------------------
+LOGO
+---------------------------------------*/
+
+.footerLogo{
+
+    font-family:var(--font-title);
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    color:var(--professional-black);
+
+}
+
+.footerLogo span{
+
+    color:var(--primary-pink);
+
+}
+
+/*---------------------------------------
+TEXTO CENTRAL
+---------------------------------------*/
+
+.footerContenido p{
+
+    margin:0;
+
+    flex:1;
+
+    text-align:center;
+
+    font-family:var(--font-text);
+
+    font-size:.9rem;
+
+    color:var(--professional-gray);
+
+    opacity:.8;
+
+}
+
+/*---------------------------------------
+LINKS
+---------------------------------------*/
+
+.footerLinks{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.footerLinks a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    font-family:var(--font-text);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    color:var(--professional-gray);
+
+    transition:.35s;
+
+}
+
+.footerLinks a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary-pink);
+
+    transition:.35s;
+
+}
+
+.footerLinks a:hover{
+
+    color:var(--primary-pink);
+
+}
+
+.footerLinks a:hover::after{
+
+    width:100%;
+
+}
+
+/*---------------------------------------
+REDES
+---------------------------------------*/
+
+.footerSocial{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.footerSocial a{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    color:var(--primary-pink);
+
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.footerSocial a i{
+
+    font-size:1.2rem;
+
+}
+
+.footerSocial a:hover{
+
+    background:var(--primary-pink);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(236,72,153,.35);
+
+}
+
+/*---------------------------------------
+LÍNEA SUPERIOR
+---------------------------------------*/
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:180px;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--primary-pink),
+        var(--health-blue),
+        var(--innovation-blue),
+        transparent
+    );
+
+    border-radius:20px;
+
+}
+
+/*---------------------------------------
+RESPONSIVE
+---------------------------------------*/
+
+@media(max-width:992px){
+
+.footerContenido{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footerContenido p{
+
+    order:3;
+
+}
+
+.footerLinks{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.footer{
+
+    padding:50px 0;
+
+}
+
+.footerLogo{
+
+    font-size:1.7rem;
+
+}
+
+.footerLinks{
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.footerLinks a{
+
+    font-size:.8rem;
+
+}
+
+.footerSocial{
+
+    justify-content:center;
+
+}
+
+}

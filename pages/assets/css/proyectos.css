@@ -1,0 +1,262 @@
+/*==================================================
+PROYECTOS
+==================================================*/
+
+.proyectos{
+    padding:8rem 0;
+    background:transparent;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:5rem;
+}
+
+.section-header .section-tag{
+    display:inline-block;
+    margin-bottom:1rem;
+
+    font-family:var(--font-body);
+    font-size:.80rem;
+    font-weight:700;
+    letter-spacing:.20rem;
+    text-transform:uppercase;
+
+    color:var(--primary-pink);
+}
+
+.section-header h2{
+
+    font-family:var(--font-heading);
+    font-size:clamp(2rem,4vw,3rem);
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:1rem;
+}
+
+.section-header h2 span{
+    color:var(--health-blue);
+}
+
+.section-header p{
+
+    max-width:720px;
+    margin:auto;
+
+    font-size:1.05rem;
+    line-height:1.8;
+
+    color:var(--professional-gray);
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.project-card{
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(236,72,153,.15);
+
+    border-radius:30px;
+
+    transition:.4s;
+display:flex;
+
+flex-direction:column;
+    height:460px;
+    min-height:450px;
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+box-shadow:
+        0 20px 45px rgba(17,24,39,.12),
+        0 0 0 1px rgba(51,131,242,.10);
+}
+
+/*==================================================
+IMAGEN
+==================================================*/
+
+.project-image{
+
+    width:100%;
+    height:140px;
+
+    overflow:hidden;
+}
+
+.project-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+}
+
+/*==================================================
+BODY
+==================================================*/
+
+.project-body{
+padding:1rem;
+display:flex;
+flex-direction:column;
+flex:1;
+   
+}
+
+.project-body h3{
+
+    font-family:var(--font-heading);
+    font-size:1rem;
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:.8rem;
+     min-height:75px;
+
+    display:flex;
+    align-items:center;
+}
+
+.project-body p{
+
+color:var(--professional-gray);
+
+font-size:.90rem;
+
+    line-height:1.5;
+min-height:80px;
+
+    margin-bottom:1rem;
+}
+.project-footer{
+
+    padding:0 1rem 1rem;
+
+}
+/*==================================================
+TECNOLOGIAS
+==================================================*/
+
+.project-tags{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:.75rem;
+}
+
+.project-tags span{
+
+    padding:.45rem 1rem;
+
+    border-radius:50px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.08rem;
+    background:rgba(236, 72, 153, 0.20);
+color:var(--primary-pink);
+    text-transform:uppercase;
+}
+
+
+/*=============================================
+BOTÓN PROYECTOs
+=============================================*/
+
+.project-actions{
+
+margin-top:auto;
+ 
+}
+
+.btn-project{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:100%;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+background:var(--primary-pink);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:.92rem;
+
+transition:.35s ease;
+
+box-shadow:0 12px 25px rgba(236,72,153,.20);
+
+}
+
+.btn-project:hover{
+
+background:var(--health-blue);
+
+color:#fff;
+
+transform:translateY(-3px);
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.project-image{
+
+    height:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.proyectos{
+
+    padding:6rem 0;
+}
+
+.project-body{
+
+    padding:1.5rem;
+}
+
+.project-body h3{
+
+    font-size:1.25rem;
+}
+
+}

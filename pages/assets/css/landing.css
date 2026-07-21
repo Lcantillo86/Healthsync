@@ -1,0 +1,1087 @@
+/*==================================================
+SOBRE MI
+SYNTESCH Portfolio
+==================================================*/
+
+.sobre-mi{
+    position: relative;
+
+    padding:5rem 0 5rem;
+    padding-bottom: 4rem;
+ border:2px solid var(--primary-pink);
+    background: var(--white);
+    overflow: hidden;
+     border-radius:40px;
+     margin:1.5rem auto 5rem;
+max-width:1450px;
+}
+
+/*=============================================
+FONDO
+=============================================*/
+
+.sobre-mi::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(17,24,39,.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(17,24,39,.04) 1px, transparent 1px);
+background-size:55px 55px;
+opacity:.45;
+pointer-events:none;
+
+}
+
+.sobre-mi .container{
+position:relative;
+z-index:2;
+max-width:1320px;
+
+}
+
+/*=============================================
+GRID
+=============================================*/
+
+.sobre-grid{
+display:grid;
+grid-template-columns:minmax(520px, 1fr) 520px;
+align-items:start;
+gap:5rem;
+}
+
+/*=============================================
+TEXTO
+=============================================*/
+
+.sobre-content{
+
+    display:flex;
+flex-direction:column;
+justify-content:flex-start;
+
+}
+
+
+.sobre-content h2{
+
+   font-size:2.2rem;
+font-weight:700;
+line-height:1.2;
+margin-bottom:1.3rem;
+max-width:520px;
+}
+
+.sobre-content h2 span{
+
+    color:var(--health-blue);
+
+}
+
+.sobre-content p{
+
+font-size:1.05rem;
+line-height:1.85;
+text-align:justify;
+max-width:600px;
+margin-bottom:1.5rem;
+
+}
+
+.section-number{
+
+display:block;
+
+margin-bottom:1.5rem;
+
+font-size: 1rem;
+
+font-weight:700;
+
+letter-spacing:.25rem;
+
+text-transform:uppercase;
+text-align:center;
+color:var(--primary-pink);
+
+}
+
+
+/*=============================================
+BOTONES
+=============================================*/
+
+.sobre-buttons{
+
+   display:flex;
+gap:1rem;
+margin-top:1rem;
+justify-content:flex-start;
+
+}
+
+.sobre-buttons a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.8rem;
+
+    text-decoration:none;
+
+    padding:15px 32px;
+
+    border-radius:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.sobre-buttons a:first-child{
+
+    background:var(--primary-pink);
+
+    color:#fff;
+
+    box-shadow:0 18px 35px rgba(236,72,153,.25);
+
+}
+
+.sobre-buttons a:first-child:hover{
+
+    background:var(--health-blue);
+
+    transform:translateY(-4px);
+
+}
+
+.sobre-buttons a:last-child{
+
+    border:2px solid var(--health-blue);
+
+    color:var(--health-blue);
+
+    background:transparent;
+
+}
+
+.sobre-buttons a:last-child:hover{
+
+    background:var(--health-blue);
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+}
+
+.media-buttons{
+
+margin-top:1.8rem;
+
+display:flex;
+
+justify-content:center;
+
+width:100%;
+
+}
+
+.media-buttons .btn-primary-syntesch{
+
+width:240px;
+
+}
+/*======================FOTO============================*/
+.sobre-photo{
+
+width:80%;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:24px;
+
+margin-bottom:1.5rem;
+
+display:block;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+/*=============================================
+VIDEO
+=============================================*/
+
+.sobre-media{
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:flex-start;
+
+gap:25px;
+
+width:100%;
+
+
+}
+
+
+.sobre-media video{
+
+    position:relative;
+
+    width:100%;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    background:#000;
+
+    box-shadow:
+
+        0 30px 70px rgba(17,24,39,.18);
+
+}
+
+
+.sobre-frame{
+
+position:relative;
+
+width:100%;
+max-width:520px;
+
+margin-top:1.5rem;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 30px 70px rgba(17,24,39,.18);
+
+}
+
+.sobre-frame video{
+
+display:block;
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+
+}
+
+/*=============================================
+BORDE GLASS
+=============================================*/
+
+.sobre-frame::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border-radius:30px;
+
+border:1px solid rgba(255,255,255,.35);
+
+pointer-events:none;
+
+}
+
+
+
+@keyframes videoGlow{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.7;
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.7;
+
+    }
+
+}
+
+/*=============================================
+DECORACIONES
+=============================================*/
+
+.sobre-mi::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-180px;
+
+    top:50%;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(circle,
+
+        rgba(94,194,253,.15),
+
+        transparent 70%);
+
+    filter:blur(70px);
+
+}
+
+/*=============================================
+RESPONSIVE
+=============================================*/
+
+@media(max-width:992px){
+
+.sobre-grid{
+
+grid-template-columns:1fr;
+
+gap:3rem;
+
+}
+
+.sobre-media{
+
+order:-1;
+
+}
+
+.sobre-content{
+
+text-align:left;
+
+}
+
+.sobre-content h2,
+.sobre-content p,
+.sobre-list{
+
+max-width:100%;
+
+}
+
+.sobre-buttons{
+
+justify-content:flex-start;
+display:flex;
+justify-content:center;
+
+margin-top:1.5rem;
+
+}
+
+.sobre-frame{
+
+margin:auto;
+
+}
+
+}
+
+
+
+/*==================================================
+PROYECTOS
+==================================================*/
+
+.proyectos{
+    padding:8rem 0;
+    background:transparent;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:5rem;
+}
+
+.section-header .section-tag{
+    display:inline-block;
+    margin-bottom:1rem;
+
+    font-family:var(--font-body);
+    font-size:.80rem;
+    font-weight:700;
+    letter-spacing:.20rem;
+    text-transform:uppercase;
+
+    color:var(--primary-pink);
+}
+
+.section-header h2{
+
+    font-family:var(--font-heading);
+    font-size:clamp(2rem,4vw,3rem);
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:1rem;
+}
+
+.section-header h2 span{
+    color:var(--health-blue);
+}
+
+.section-header p{
+
+    max-width:720px;
+    margin:auto;
+
+    font-size:1.05rem;
+    line-height:1.8;
+
+    color:var(--professional-gray);
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.project-card{
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(236,72,153,.15);
+
+    border-radius:30px;
+
+    transition:.4s;
+display:flex;
+
+flex-direction:column;
+    height:460px;
+    min-height:450px;
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+box-shadow:
+        0 20px 45px rgba(17,24,39,.12),
+        0 0 0 1px rgba(51,131,242,.10);
+}
+
+/*==================================================
+IMAGEN
+==================================================*/
+
+.project-image{
+
+    width:100%;
+    height:140px;
+
+    overflow:hidden;
+}
+
+.project-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+}
+
+/*==================================================
+BODY
+==================================================*/
+
+.project-body{
+padding:1rem;
+display:flex;
+flex-direction:column;
+flex:1;
+   
+}
+
+.project-body h3{
+
+    font-family:var(--font-heading);
+    font-size:1rem;
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:.8rem;
+     min-height:75px;
+
+    display:flex;
+    align-items:center;
+}
+
+.project-body p{
+
+color:var(--professional-gray);
+
+font-size:.90rem;
+
+    line-height:1.5;
+min-height:80px;
+
+    margin-bottom:1rem;
+}
+.project-footer{
+
+    padding:0 1rem 1rem;
+
+}
+/*==================================================
+TECNOLOGIAS
+==================================================*/
+
+.project-tags{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:.75rem;
+}
+
+.project-tags span{
+
+    padding:.45rem 1rem;
+
+    border-radius:50px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.08rem;
+    background:rgba(236, 72, 153, 0.20);
+color:var(--primary-pink);
+    text-transform:uppercase;
+}
+
+
+/*=============================================
+BOTÓN PROYECTOs
+=============================================*/
+
+.project-actions{
+
+margin-top:auto;
+ 
+}
+
+.btn-project{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:100%;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+background:var(--primary-pink);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:.92rem;
+
+transition:.35s ease;
+
+box-shadow:0 12px 25px rgba(236,72,153,.20);
+
+}
+
+.btn-project:hover{
+
+background:var(--health-blue);
+
+color:#fff;
+
+transform:translateY(-3px);
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.project-image{
+
+    height:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.proyectos{
+
+    padding:6rem 0;
+}
+
+.project-body{
+
+    padding:1.5rem;
+}
+
+.project-body h3{
+
+    font-size:1.25rem;
+}
+
+}
+/*==================================================
+TECNOLOGIAS
+SYNTESCH
+==================================================*/
+
+.tecnologias{
+
+    padding:5rem 0;
+
+    background:var(--scientific-lilac);
+
+}
+
+.tecnologias .container{
+
+    max-width:1320px;
+
+}
+
+/*======================================
+HEADER
+======================================*/
+
+.tecnologias-header{
+
+    margin-bottom:4rem;
+
+}
+
+.tecnologias-header h2{
+
+    font-family:var(--font-heading);
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:var(--professional-black);
+
+    margin-bottom:.8rem;
+
+}
+
+.tecnologias-header p{
+
+    color:var(--professional-gray);
+
+    font-size:1rem;
+
+}
+
+/*======================================
+GRID
+======================================*/
+
+.tecnologias-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+margin-top:3rem;
+}
+
+/*======================================
+CARD
+======================================*/
+
+.tech-card{
+
+    background:#FFFFFF;
+
+    border:1px solid var(--primary-pink);
+
+    height:170px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+
+.tech-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#FCFEFF;
+
+    box-shadow:
+
+        0 15px 30px rgba(236,72,153,.12);
+
+}
+
+/*======================================
+ICONO
+======================================*/
+
+.tech-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom: 1rem;
+
+}
+
+.tech-icon img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+/*======================================
+NOMBRE
+======================================*/
+
+.tech-card h3{
+
+    font-family:var(--font-body);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--professional-black);
+
+    text-align:center;
+
+    margin:0;
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+.tecnologias-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+.tecnologias-grid{
+
+grid-template-columns:1fr;
+}
+
+.tecnologias-header{
+
+    text-align:center;
+
+}
+
+.tecnologias-header h2{
+
+    font-size:2rem;
+
+}
+
+.tecnologias-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:480px){
+
+.tecnologias-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+/*=============================================
+BOTÓN PROYECTOs
+=============================================*/
+
+.project-actions{
+
+margin-top:auto;
+display:flex;
+    justify-content:center;
+
+}
+
+.btn-project{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:85%;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+background:var(--primary-pink);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:.92rem;
+
+transition:.35s ease;
+
+box-shadow:0 12px 25px rgba(236,72,153,.20);
+
+}
+
+.btn-project:hover{
+
+background:var(--health-blue);
+
+color:#fff;
+
+transform:translateY(-3px);
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.project-image{
+
+    height:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.proyectos{
+
+    padding:6rem 0;
+}
+
+.project-body{
+
+    padding:1.5rem;
+}
+
+.project-body h3{
+
+    font-size:1.25rem;
+}
+
+}
+
+/*==================================================
+TECNOLOGIAS
+==================================================*/
+
+.project-tags{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:.75rem;
+}
+
+.project-tags span{
+
+    padding:.45rem 1rem;
+
+    border-radius:50px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.08rem;
+    background:rgba(236, 72, 153, 0.20);
+color:var(--primary-pink);
+    text-transform:uppercase;
+}
+
+
+/*=============================================
+BOTÓN PROYECTOs
+=============================================*/
+
+.project-actions{
+
+margin-top:auto;
+
+}
+
+.btn-project{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:100%;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+background:var(--primary-pink);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:.92rem;
+
+transition:.35s ease;
+
+box-shadow:0 12px 25px rgba(236,72,153,.20);
+
+}
+
+.btn-project:hover{
+
+background:var(--health-blue);
+
+color:#fff;
+
+transform:translateY(-3px);
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.project-image{
+
+    height:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.proyectos{
+
+    padding:6rem 0;
+}
+
+.project-body{
+
+    padding:1.5rem;
+}
+
+.project-body h3{
+
+    font-size:1.25rem;
+}
+
+}
+
